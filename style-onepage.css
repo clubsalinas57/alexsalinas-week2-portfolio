@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+ /* justify-content: flex-start; */
+  }
+
+header {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.header-logo {
+  float: left;
+}
+
+/****************** NAVIGATION *******************/
+
+.nav-wrapper {
+  float:left;
+  margin-top: 125px;
+}
+
+.nav-items {
+  display: flex;
+  /*justify-content:space-evenly; */
+  /*min-width: 400px;*/
+  list-style: none;
+  }
+
+  .nav-items a {
+    background-color: #175260;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .nav-items a:hover {
+    background-color: #45747f;
+  }
+
+  .button a:active {
+    background-color: #175260;
+  }
+
+/************* INDEX IMAGE *******************/
+
+  .hero {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    margin: 2vw auto;
+    background-image: url("time-square.jpg");
+  }
+
+  .hero-copy-box {
+    margin: auto;
+  }
+  .hero-copy-box p {
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero {
+      width: 480px;
+    }
+  }
+  /*
+  .hero img {
+    object-fit:cover;
+    width: 100%;
+  }
+  */
+
+.clearfix {
+  clear:both;
+  }
+
+/******************* SECTION PIECES ******************/
+  .topic-head {
+    display: flex;
+    max-width: 1200px;
+    width: 80%;
+    margin: 2vw auto;
+    padding-top:1vw;
+    color: #175260;
+    font-weight: bold;
+    border-bottom: solid #45747f .1em;
+}
+
+  .single-col-card-container {
+    display: flex; 
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .card {
+    margin:0px;
+    flex: 0 0 10px;
+  }
+  
+  .card img {
+    width: 250px;
+  }
+
+.two-col-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    padding-bottom: 50px;
+    }
+    
+/********** ABOUT SECTION *************/
+
+.about-left {
+    float: left;
+    display: flex;
+    float:left;
+    width: 100%;
+}
+
+.about-left img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding: 10px;   
+}
+
+.about-right {
+float:left;
+margin-left: 20px;
+}
+
+/********** CONTACT PAGE *************/
+
+.contact {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+  padding-bottom: 50px;
+  }
+
+.contact-btn {
+  background-color: #175260;
+  border: none;
+  padding: 3% 32px 6%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  height: 16px;
+  }
+
+.contact-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+  form {
+      margin: 0 auto;
+      max-width: 1200px;
+      width: 80%;
+      padding-bottom: 50px;
+    }
+    
+    form h3 {
+      font-size: 150%;
+    }
+    
+    form p {
+      margin: 3% 0;
+    }
+    
+    label {
+      display: block;
+    }
+    
+    button {
+      padding: 1% 2%;
+      color: #fff;
+      background-color: #13293d;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("../images/arrow.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+    
+    .text-input {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .text-input, select {
+      padding: 1%;
+      outline: none;
+      border: 1.2px solid #b9C6ae;
+    }
+    
+    .text-input:hover, .checkbox:hover, 
+    select:hover, button:hover {
+      box-shadow: 0 0 5px #999;
+    }
+
+@media screen and (max-width: 768px) {
+  main, .contact {
+    flex-direction: column;
+  }
+}
+
+
+  /************* FOOTER   /*************/
+footer {
+  display: flex;
+  width: 100%;
+  background-color: #175260;
+  border-top: 5px solid lightgray;
+  padding: 15px 10px;
+  color: lightgray;
+}
+
+footer h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer .foot-list-wrapper {
+  margin: 0 auto;
+}
+
+footer .foot-items {
+  justify-content: space-around;
+  padding: 10px;
+}
+
+footer .foot-items p {
+  float: left;
+  padding: 20px;
+}
+
+.foot-list-wrapper a:link {
+  text-decoration: none;
+  color:  #ffffff;
+}
+.foot-list-wrapper a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+  
+  @media screen and (max-width: 992px) {
+    header {
+      padding-bottom: 10px;
+    }
+  }
+  
+  /* Large smartphones */
+  @media screen and (max-width: 768px) {
+    header, .nav-wapper, .hero, .topic-head,
+    .single-col-card-container .two-col-container .contact footer {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-wrapper {
+      margin-top: 15px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+      text-align: center;
+    } 
+  }
